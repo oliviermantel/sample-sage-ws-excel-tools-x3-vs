@@ -1,8 +1,15 @@
-Addin excel X3
+# An example inside Excel.
+# How you can call the two X3 web services for reading and for writing inside X3
 
-Version X3 >= PU9
+## Prerequis
 
-Ceci ne contient que le developpement en C# avec Visual Studio 2015
-Il n y a pas de code X3 ni patch X3
-Il n y a pas de projet eclipse
+Minimum version X3 PU9
+
+## Features
+
+
+* This project include the development in C# with Visual Studio 2015
+* There are no X3 patch, 
+* No Eclipse project
+
 
