@@ -5,6 +5,8 @@
 
 Minimum version X3 PU9
 
+You must have the project fo installing the X3 webservice part : sample-sage-ws-excel-tools-x3-l4g
+
 ## Features
 
 
