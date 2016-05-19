@@ -1,0 +1,22 @@
+<PARAM>
+		<GRP DIM="1" ID="GRP1" PNA="GRP1" >
+			<FLD C_FRA="Type" IDX="1" LEN="250" MOD="Input" NAME="TYP" PAR="Value" TYP="Char" >SEC</FLD>
+			<FLD C_FRA="Enreg suivants : 1=non, 2=oui" IDX="2" MOD="Input" NAME="NEXTT" PAR="Value" TYP="Integer" >1</FLD>
+		</GRP>
+		<TAB DIM="5" ID="GRP2" PNA="GRP2" >
+		 <LIN><FLD C_FRA="Critères de selection" IDX="3" LEN="250" MOD="Input" NAME="TABCRIT" PAR="Value" TYP="Char" >DIE='AFF'</FLD></LIN>
+		 <LIN><FLD C_FRA="Critères de selection" IDX="3" LEN="250" MOD="Input" NAME="TABCRIT" PAR="Value" TYP="Char" >1=1</FLD></LIN>
+		</TAB>
+		
+</PARAM>
+
+<PARAM>
+		<GRP ID="GRP1">
+			<FLD NAME="TYP">SEC</FLD>
+			<FLD NAME="NEXTT">1</FLD>
+		</GRP>
+		<TAB ID="GRP2">
+		 <LIN><FLD NAME="TABCRIT">DIE='AFF'</FLD></LIN>
+		 <LIN><FLD NAME="TABCRIT">1=1</FLD></LIN>
+		</TAB>	
+</PARAM>

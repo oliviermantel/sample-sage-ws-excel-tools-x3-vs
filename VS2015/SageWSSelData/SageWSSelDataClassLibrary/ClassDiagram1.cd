@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SageWSSelData.CallWebServiceX3">
+    <Position X="0.75" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAABAAAAIIAAAACAAAABAAAABAAAkAAAAFAAAAA=</HashCode>
+      <FileName>CallWebServiceX3.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SageWSSelDataClassLibrary.Properties.Settings" Collapsed="true">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

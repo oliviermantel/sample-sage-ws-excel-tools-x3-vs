@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProjectTypeGuids>{BAA0C2D2-18E2-41B9-852F-F413020CAA33};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <RootNamespace>ExcelWorkbookBud</RootNamespace>
+    <AssemblyName>SageWSExcel_Tools_X3</AssemblyName>
+    <VSTO_HostDocumentName>formX3.xlsx</VSTO_HostDocumentName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <DefineConstants>VSTO40</DefineConstants>
+    <OfficeApplication>Excel</OfficeApplication>
+    <ProjectGuid>{486ED311-6A23-401D-899C-B4023652C4B6}</ProjectGuid>
+    <SolutionID>c0c368a8-7bc3-43bd-924a-2d0bdcf000fd</SolutionID>
+    <IsWebBootstrapper>False</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <VSTO_TrustAssembliesLocation>true</VSTO_TrustAssembliesLocation>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <PublishUrl>C:\DONNEES\PUBLISH\addin_excel\</PublishUrl>
+    <InstallUrl />
+    <TargetCulture>fr</TargetCulture>
+    <ApplicationVersion>2.0.0.7</ApplicationVersion>
+    <AutoIncrementApplicationRevision>true</AutoIncrementApplicationRevision>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateInterval>4</UpdateInterval>
+    <UpdateIntervalUnits>weeks</UpdateIntervalUnits>
+    <ProductName>SageWSExcel_Budget_Tools_X3</ProductName>
+    <PublisherName>Sage</PublisherName>
+    <SupportUrl />
+    <FriendlyName>SageWSExcel_Budget_Tools_X3</FriendlyName>
+    <OfficeApplicationDescription />
+  </PropertyGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <PropertyGroup>
+    <VSTO_EmbedTypeLibraryInAssembly>false</VSTO_EmbedTypeLibraryInAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>$(DefineConstants);DEBUG;TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>$(DefineConstants);TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>sage-eb.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>AAD6A69A73C6D130D5C3D460D59E47F22EE45359</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Vbe.Interop, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Tools.Applications.Runtime, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Tools.v4.0.Framework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Tools.Excel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Tools.Common.v4.0.Utilities, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Excel.v4.0.Utilities, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionButtonLoadDatasForm.cs" />
+    <Compile Include="ActionButtonLoadDatasRep.cs" />
+    <Compile Include="ActionButtonLoadDatas.cs" />
+    <Compile Include="ActionButtonUpdateDatas.cs" />
+    <Compile Include="AbstractActionButtonDatas.cs" />
+    <Compile Include="ConnectionWSX3.cs" />
+    <Compile Include="DescriptionColumn.cs" />
+    <Compile Include="Feuil49.cs">
+      <DependentUpon>formX3.xlsx</DependentUpon>
+    </Compile>
+    <Compile Include="Feuil49.Designer.cs">
+      <DependentUpon>Feuil49.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="FeuilDataRep1.cs">
+      <DependentUpon>formX3.xlsx</DependentUpon>
+    </Compile>
+    <Compile Include="FeuilDataRep1.Designer.cs">
+      <DependentUpon>FeuilDataRep1.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="FeuilHiddenDatas.cs">
+      <DependentUpon>formX3.xlsx</DependentUpon>
+    </Compile>
+    <Compile Include="FeuilHiddenDatas.Designer.cs">
+      <DependentUpon>FeuilHiddenDatas.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="FeuilGlobalParams.cs">
+      <DependentUpon>formX3.xlsx</DependentUpon>
+    </Compile>
+    <Compile Include="FeuilGlobalParams.Designer.cs">
+      <DependentUpon>FeuilGlobalParams.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="FeuilCalculation.cs">
+      <DependentUpon>formX3.xlsx</DependentUpon>
+    </Compile>
+    <Compile Include="FeuilCalculation.Designer.cs">
+      <DependentUpon>FeuilCalculation.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="FeuilDataForm.cs">
+      <DependentUpon>formX3.xlsx</DependentUpon>
+    </Compile>
+    <Compile Include="FeuilDataForm.Designer.cs">
+      <DependentUpon>FeuilDataForm.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="FeuilLogWebService.cs">
+      <DependentUpon>formX3.xlsx</DependentUpon>
+    </Compile>
+    <Compile Include="FeuilLogWebService.Designer.cs">
+      <DependentUpon>FeuilLogWebService.Designer.xml</DependentUpon>
+    </Compile>
+    <Compile Include="FormConnectionX3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConnectionX3.Designer.cs">
+      <DependentUpon>FormConnectionX3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IActionButtonBudget.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThisWorkbook.cs">
+      <DependentUpon>formX3.xlsx</DependentUpon>
+    </Compile>
+    <Compile Include="ThisWorkbook.Designer.cs">
+      <DependentUpon>ThisWorkbook.Designer.xml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FeuilDataRep1.resx">
+      <DependentUpon>FeuilDataRep1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeuilGlobalParams.resx">
+      <DependentUpon>FeuilGlobalParams.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeuilHiddenDatas.resx">
+      <DependentUpon>FeuilHiddenDatas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeuilCalculation.resx">
+      <DependentUpon>FeuilCalculation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeuilDataForm.resx">
+      <DependentUpon>FeuilDataForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeuilLogWebService.resx">
+      <DependentUpon>FeuilLogWebService.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConnectionX3.resx">
+      <DependentUpon>FormConnectionX3.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ThisWorkbook.resx">
+      <DependentUpon>ThisWorkbook.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="formX3.xlsx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ThisWorkbook.Designer.xml">
+      <DependentUpon>ThisWorkbook.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FeuilDataForm.Designer.xml">
+      <DependentUpon>FeuilDataForm.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SageWSSelData\SageWSSelDataClassLibrary\SageWSSelDataClassLibrary.csproj">
+      <Project>{5E21D594-5783-40E7-86D1-FFFDBE2FF552}</Project>
+      <Name>SageWSSelDataClassLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FeuilLogWebService.Designer.xml">
+      <DependentUpon>FeuilLogWebService.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FeuilGlobalParams.Designer.xml">
+      <DependentUpon>FeuilGlobalParams.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FeuilCalculation.Designer.xml">
+      <DependentUpon>FeuilCalculation.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FeuilHiddenDatas.Designer.xml">
+      <DependentUpon>FeuilHiddenDatas.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FeuilDataRep1.Designer.xml">
+      <DependentUpon>FeuilDataRep1.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Feuil49.Designer.xml">
+      <DependentUpon>Feuil49.cs</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\OfficeTools\Microsoft.VisualStudio.Tools.Office.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{BAA0C2D2-18E2-41B9-852F-F413020CAA33}">
+        <ProjectProperties HostName="formX3.xlsx" HostPackage="{3F2B7691-D1D1-402F-9370-2704A737CF60}" OfficeVersion="15.0" VstxVersion="4.0" ApplicationType="XLS" Language="CS" TemplatesPath="VSTOTemplates" DebugInfoExeName="C:\Program Files\Microsoft Office 15\root\Office15\Excel.exe" DebugInfoCommandLine="/x &quot;[$OUTPUT]formX3.xlsx&quot;" />
+        <Host Name="Excel Document" Path=".\formX3.xlsx" GeneratedCodeNamespace="ExcelWorkbookBud" PublishedHash="AF8C3683E81B6ED29A9C6B816EE2B0347B625E88">
+          <HostItem Name="Feuil4" Code="Feuil49.cs" CanonicalName="Feuil4" PublishedHash="835A02E09ECF36205EC65F3FAA30C53207E237A2" DisplayName="Products sales" Blueprint="Feuil49.Designer.xml" GeneratedCode="Feuil49.Designer.cs" />
+          <HostItem Name="Feuil9" Code="FeuilCalculation.cs" CanonicalName="Feuil9" PublishedHash="128EBB1BB38794E16EFAD930BAED1F5A1DE62C36" DisplayName="Calculation" Blueprint="FeuilCalculation.Designer.xml" GeneratedCode="FeuilCalculation.Designer.cs" />
+          <HostItem Name="Feuil3" Code="FeuilDataForm.cs" CanonicalName="Feuil3" PublishedHash="22D58103EA7BEF3A009A534C4290694F6885B181" DisplayName="Forecast" Blueprint="FeuilDataForm.Designer.xml" GeneratedCode="FeuilDataForm.Designer.cs" />
+          <HostItem Name="Feuil2" Code="FeuilDataRep1.cs" CanonicalName="Feuil2" PublishedHash="24B32ED5C022B1FBC86A969F18DD7D0919C872A5" DisplayName="Sites" Blueprint="FeuilDataRep1.Designer.xml" GeneratedCode="FeuilDataRep1.Designer.cs" />
+          <HostItem Name="Feuil1" Code="FeuilGlobalParams.cs" CanonicalName="Feuil1" PublishedHash="968ED1BEFABB84232C8A148C195CA7F4ECD58965" DisplayName="Global Params" Blueprint="FeuilGlobalParams.Designer.xml" GeneratedCode="FeuilGlobalParams.Designer.cs" />
+          <HostItem Name="Feuil10" Code="FeuilHiddenDatas.cs" CanonicalName="Feuil10" PublishedHash="F1B56C42E97C7F6660655FCEB75FB662D76D3376" CanActivate="false" DisplayName="HiddenDatas" Blueprint="FeuilHiddenDatas.Designer.xml" GeneratedCode="FeuilHiddenDatas.Designer.cs" />
+          <HostItem Name="Feuil5" Code="FeuilLogWebService.cs" CanonicalName="Feuil5" PublishedHash="E02AC4BF5AE3DB45B0108F3EB8F8B15A4C481A61" CanActivate="false" DisplayName="Log web service" Blueprint="FeuilLogWebService.Designer.xml" GeneratedCode="FeuilLogWebService.Designer.cs" />
+          <HostItem Name="ThisWorkbook" Code="ThisWorkbook.cs" CanonicalName="ThisWorkbook" PublishedHash="FA9955DB4678A53F5A1172927B6D6AA844687299" Blueprint="ThisWorkbook.Designer.xml" GeneratedCode="ThisWorkbook.Designer.cs" />
+        </Host>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!--
+    To modify your build process, add your task inside one of the targets below and uncomment it.
+    Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
