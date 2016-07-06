@@ -57,7 +57,7 @@
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.VSTORuntime.4.0">
       <Visible>False</Visible>
-      <ProductName>Microsoft Visual Studio 2010 Tools pour Office Runtime %28x86 et x64%29</ProductName>
+      <ProductName>Microsoft Visual Studio 2010 Tools for Office Runtime %28x86 and x64%29</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
@@ -327,7 +327,7 @@
   <ProjectExtensions>
     <VisualStudio>
       <FlavorProperties GUID="{BAA0C2D2-18E2-41B9-852F-F413020CAA33}">
-        <ProjectProperties HostName="formX3.xlsx" HostPackage="{3F2B7691-D1D1-402F-9370-2704A737CF60}" OfficeVersion="15.0" VstxVersion="4.0" ApplicationType="XLS" Language="CS" TemplatesPath="VSTOTemplates" DebugInfoExeName="C:\Program Files\Microsoft Office 15\root\Office15\Excel.exe" DebugInfoCommandLine="/x &quot;[$OUTPUT]formX3.xlsx&quot;" />
+        <ProjectProperties HostName="formX3.xlsx" HostPackage="{3F2B7691-D1D1-402F-9370-2704A737CF60}" OfficeVersion="15.0" VstxVersion="4.0" ApplicationType="XLS" Language="CS" TemplatesPath="VSTOTemplates" DebugInfoExeName="C:\Program Files (x86)\Microsoft Office\root\Office16\Excel.exe" DebugInfoCommandLine="/x &quot;[$OUTPUT]formX3.xlsx&quot;" />
         <Host Name="Excel Document" Path=".\formX3.xlsx" GeneratedCodeNamespace="ExcelWorkbookBud" PublishedHash="AF8C3683E81B6ED29A9C6B816EE2B0347B625E88">
           <HostItem Name="Feuil4" Code="Feuil49.cs" CanonicalName="Feuil4" PublishedHash="835A02E09ECF36205EC65F3FAA30C53207E237A2" DisplayName="Products sales" Blueprint="Feuil49.Designer.xml" GeneratedCode="Feuil49.Designer.cs" />
           <HostItem Name="Feuil9" Code="FeuilCalculation.cs" CanonicalName="Feuil9" PublishedHash="128EBB1BB38794E16EFAD930BAED1F5A1DE62C36" DisplayName="Calculation" Blueprint="FeuilCalculation.Designer.xml" GeneratedCode="FeuilCalculation.Designer.cs" />

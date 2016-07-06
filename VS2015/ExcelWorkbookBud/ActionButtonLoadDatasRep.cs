@@ -102,6 +102,14 @@ namespace ExcelWorkbook.Actions
                                 Globals.FeuilDataRep1.TableauDataRep1.Range.Cells[nbLigDataRep1, 1] = tabvalstr[lig, colDataRep];
                                 Globals.FeuilDataRep1.TableauDataRep1.Range.Cells[nbLigDataRep1, 2] = tabvalstr[lig, colDataRep + 1];
                                 Globals.FeuilDataRep1.TableauDataRep1.Range.Cells[nbLigDataRep1, 3] = tabvalstr[lig, colDataRep + 2];
+                                Globals.FeuilDataRep1.TableauDataRep1.Range.Cells[nbLigDataRep1, 4] = tabvalstr[lig, colDataRep + 3];
+                                Globals.FeuilDataRep1.TableauDataRep1.Range.Cells[nbLigDataRep1, 5] = tabvalstr[lig, colDataRep + 4];
+                                Globals.FeuilDataRep1.TableauDataRep1.Range.Cells[nbLigDataRep1, 6] = tabvalstr[lig, colDataRep + 5];
+                                Globals.FeuilDataRep1.TableauDataRep1.Range.Cells[nbLigDataRep1, 7] = tabvalstr[lig, colDataRep + 6];
+                                Globals.FeuilDataRep1.TableauDataRep1.Range.Cells[nbLigDataRep1, 8] = tabvalstr[lig, colDataRep + 7];
+                                Globals.FeuilDataRep1.TableauDataRep1.Range.Cells[nbLigDataRep1, 9] = tabvalstr[lig, colDataRep + 8];
+                                Globals.FeuilDataRep1.TableauDataRep1.Range.Cells[nbLigDataRep1, 10] = tabvalstr[lig, colDataRep + 9];
+
                                 //Globals.FeuilDataForm.dataTableSites.Rows.Add(tabvalstr[lig, colDataRep], tabvalstr[lig, colDataRep + 1]);
 
                             }
@@ -113,7 +121,12 @@ namespace ExcelWorkbook.Actions
                                 Globals.Feuil4.TableauDataRep2.Range.Cells[nbLigDataRep2, 2] = tabvalstr[lig, colDataRep + 1];
                                 Globals.Feuil4.TableauDataRep2.Range.Cells[nbLigDataRep2, 3] = tabvalstr[lig, colDataRep + 2];
                                 Globals.Feuil4.TableauDataRep2.Range.Cells[nbLigDataRep2, 4] = tabvalstr[lig, colDataRep + 3];
-                                // Globals.FeuilDataForm.dataTableSites.Rows.Add(tabvalstr[lig, colSite - 1], tabvalstr[lig, colSiteDes - 1]);
+                                Globals.Feuil4.TableauDataRep2.Range.Cells[nbLigDataRep2, 5] = tabvalstr[lig, colDataRep + 4];
+                                Globals.Feuil4.TableauDataRep2.Range.Cells[nbLigDataRep2, 6] = tabvalstr[lig, colDataRep + 5];
+                                Globals.Feuil4.TableauDataRep2.Range.Cells[nbLigDataRep2, 7] = tabvalstr[lig, colDataRep + 6];
+                                Globals.Feuil4.TableauDataRep2.Range.Cells[nbLigDataRep2, 8] = tabvalstr[lig, colDataRep + 7];
+                                Globals.Feuil4.TableauDataRep2.Range.Cells[nbLigDataRep2, 9] = tabvalstr[lig, colDataRep + 8];
+                                Globals.Feuil4.TableauDataRep2.Range.Cells[nbLigDataRep2, 10] = tabvalstr[lig, colDataRep + 9];
 
                             }
                             if (tabvalstr[lig, col].StartsWith("="))
